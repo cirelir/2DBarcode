@@ -17,11 +17,8 @@ class WebViewController: UIViewController,UIWebViewDelegate {
         super.viewDidLoad()
         
         let str = url! as String
-        print("--------------\(str)")
         
         let path = NSURL(string: str)
-        print("path == \(path)")
-        
         let webview = UIWebView(frame: self.view.bounds)
         webview.delegate = self
         webview.loadRequest(NSURLRequest(URL: path!))

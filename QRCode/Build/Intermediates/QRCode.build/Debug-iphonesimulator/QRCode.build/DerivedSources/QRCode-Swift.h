@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import AVFoundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -114,13 +115,27 @@ SWIFT_CLASS("_TtC6QRCode11AppDelegate")
 @end
 
 @class UIView;
+@class CALayer;
+@class AVCaptureSession;
+@class AVCaptureOutput;
+@class AVCaptureConnection;
+@class NSTimer;
+@class UIImagePickerController;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6QRCode21ScannerViewController")
-@interface ScannerViewController : UIViewController
-@property (nonatomic, readonly, strong) UIView * _Nonnull boxView;
+@interface ScannerViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@property (nonatomic, readonly, strong) UIView * _Nonnull cameraView;
+@property (nonatomic, readonly, strong) UIView * _Nonnull barcodeView;
+@property (nonatomic, readonly, strong) CALayer * _Nonnull scanLayer;
+@property (nonatomic, readonly, strong) AVCaptureSession * _Nonnull captureSession;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)captureOutput:(AVCaptureOutput * _Null_unspecified)captureOutput didOutputMetadataObjects:(NSArray * _Null_unspecified)metadataObjects fromConnection:(AVCaptureConnection * _Null_unspecified)connection;
+- (void)moveScannerLayer:(NSTimer * _Nonnull)timer;
+- (void)selectPhotoFormPhotoLibrary:(id _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -131,6 +146,17 @@ SWIFT_CLASS("_TtC6QRCode14ViewController")
 - (void)viewDidLoad;
 - (void)buttonAction:(id _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIWebView;
+
+SWIFT_CLASS("_TtC6QRCode17WebViewController")
+@interface WebViewController : UIViewController <UIWebViewDelegate>
+@property (nonatomic, copy) NSString * _Nullable url;
+- (void)viewDidLoad;
+- (void)webViewDidFinishLoad:(UIWebView * _Nonnull)webView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
