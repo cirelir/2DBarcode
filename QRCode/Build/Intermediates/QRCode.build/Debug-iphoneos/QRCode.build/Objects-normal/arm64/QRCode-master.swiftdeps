@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "28b5b411e994a8a56a63a37e6570b6c2"
+build_time: [515822194, 39132000]
+inputs:
+  "/Users/kakukinsen/Desktop/QRCode/QRCode/ViewController.swift": [515749767, 0]
+  "/Users/kakukinsen/Desktop/QRCode/QRCode/WebViewController.swift": [515821451, 0]
+  "/Users/kakukinsen/Desktop/QRCode/QRCode/ScannerViewController.swift": [515821924, 0]
+  "/Users/kakukinsen/Desktop/QRCode/QRCode/AppDelegate.swift": [515749733, 0]
