@@ -1,0 +1,76 @@
+[
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 344,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 363,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 402,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 416,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 455,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 460,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 505,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 526,
+  "remove": 8,
+  "text": "())",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 576,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 588,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 609,
+  "remove": 8,
+  "text": "())",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 704,
+  "remove": 13,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 735,
+  "remove": 1,
+  "text": "t",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift",
+  "offset": 829,
+  "text": "_ ",
+ }
+]

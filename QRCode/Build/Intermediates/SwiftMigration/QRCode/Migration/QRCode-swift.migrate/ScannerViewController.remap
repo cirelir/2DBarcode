@@ -1,0 +1,183 @@
+[
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 415,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 631,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 752,
+  "remove": 1,
+  "text": "a",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 1102,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 1115,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 1738,
+  "remove": 1,
+  "text": "D",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 1746,
+  "remove": 2,
+  "text": "Q",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 1752,
+  "remove": 8,
+  "text": "(label: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 1769,
+  "remove": 3,
+  "text": "attributes: []",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2330,
+  "text": "?",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2453,
+  "text": "?",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2596,
+  "text": "!",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2600,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2686,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2696,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2701,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2706,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2764,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 2859,
+  "remove": 2,
+  "text": "isHi",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 3192,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 3285,
+  "remove": 10,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 3499,
+  "remove": 1,
+  "text": "D",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 3507,
+  "remove": 2,
+  "text": "Queue.main.a",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 3514,
+  "remove": 26,
+  "text": "execute:",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 3891,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 4023,
+  "remove": 1,
+  "text": "p",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 4088,
+  "remove": 14,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 4268,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 4736,
+  "text": "?",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 4745,
+  "remove": 8,
+  "text": "(in: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 4816,
+  "text": "!",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 5065,
+  "remove": 16,
+  "text": "(an",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift",
+  "offset": 5087,
+  "remove": 1,
+  "text": ": ",
+ }
+]

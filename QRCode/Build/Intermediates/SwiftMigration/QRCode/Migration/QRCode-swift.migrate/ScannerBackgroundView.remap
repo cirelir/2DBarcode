@@ -1,0 +1,403 @@
+[
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 275,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 293,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 327,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 340,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 376,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 389,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 423,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 436,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 568,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 748,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 756,
+  "remove": 3,
+  "text": "cgC",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 867,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 875,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 878,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 908,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1170,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1214,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1236,
+  "remove": 5,
+  "text": "(t",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1252,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1444,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1452,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1456,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1469,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1497,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1510,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1592,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1600,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1613,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1661,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1697,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1710,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1738,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1751,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1801,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1888,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1896,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1909,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1945,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1958,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 1992,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2005,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2084,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2102,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2136,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2149,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2185,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2198,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2232,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2245,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2669,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2677,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2681,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2694,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2722,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2758,
+  "remove": 1,
+  "text": "c",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2803,
+  "remove": 1,
+  "text": "(o",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2809,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 2853,
+  "remove": 5,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3299,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3309,
+  "remove": 1,
+  "text": " ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3330,
+  "remove": 6,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3366,
+  "remove": 4,
+  "text": "NSKeyValueCha",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3372,
+  "text": "eKey",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3423,
+  "text": "?",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3617,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3625,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3667,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3675,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3678,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3713,
+  "text": "height: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3740,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3752,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3798,
+  "remove": 5,
+  "text": "(x: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3833,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3905,
+  "text": "width: ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift",
+  "offset": 3937,
+  "text": "height: ",
+ }
+]

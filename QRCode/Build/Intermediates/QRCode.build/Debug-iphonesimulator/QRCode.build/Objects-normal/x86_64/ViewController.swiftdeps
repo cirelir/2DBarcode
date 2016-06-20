@@ -6,28 +6,29 @@ provides-nominal:
 provides-member:
 - ["C6QRCode14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "buttonAction"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "ScannerViewController"
-- !private "UIScreen"
-- "UIViewController"
 - !private "UIButton"
-- !private "CGRectMake"
-- "ViewController"
+- !private "UIScreen"
+- !private "-"
+- !private "CGRect"
+- "AnyObject"
 - !private "UIColor"
-- !private "*"
 - !private "UIControlEvents"
 - !private "StringLiteralType"
-- "AnyObject"
-- !private "print"
-- !private "-"
 - !private "UIControlState"
+- !private "*"
+- "ViewController"
+- !private "ScannerViewController"
+- !private "print"
+- "UIViewController"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "init"]
-- !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "ScannerViewController"]
 - !private ["Ps9AnyObject", "UIButton"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -37,12 +38,12 @@ depends-member:
 - !private ["Ps9AnyObject", "ViewController"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
-- !private ["Ps9AnyObject", "blueColor"]
+- !private ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "bounds"]
 - ["Ps9AnyObject", "buttonAction"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "mainScreen"]
+- !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "pushViewController"]
@@ -52,39 +53,53 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps23ArrayLiteralConvertible", "Normal"]
-- !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "RawValue"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "touchUpInside"]
+- !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "addTarget"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "setTitle"]
+- !private ["PSo15CALayerDelegate", "setTitleColor"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGSize", "height"]
 - !private ["VSC6CGSize", "width"]
-- !private ["Ps11CVarArgType", "CGRectMake"]
-- !private ["Ps11CVarArgType", "ScannerViewController"]
-- !private ["Ps11CVarArgType", "UIButton"]
-- !private ["Ps11CVarArgType", "UIColor"]
-- !private ["Ps11CVarArgType", "UIControlEvents"]
-- !private ["Ps11CVarArgType", "UIControlState"]
-- !private ["Ps11CVarArgType", "UIScreen"]
-- !private ["Ps11CVarArgType", "ViewController"]
-- !private ["Ps11CVarArgType", "addSubview"]
-- !private ["Ps11CVarArgType", "addTarget"]
-- !private ["Ps11CVarArgType", "blueColor"]
-- !private ["Ps11CVarArgType", "bounds"]
-- ["Ps11CVarArgType", "buttonAction"]
-- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
-- ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "mainScreen"]
-- !private ["Ps11CVarArgType", "navigationController"]
-- !private ["Ps11CVarArgType", "print"]
-- !private ["Ps11CVarArgType", "pushViewController"]
-- !private ["Ps11CVarArgType", "setTitle"]
-- !private ["Ps11CVarArgType", "setTitleColor"]
-- !private ["Ps11CVarArgType", "title"]
-- !private ["Ps11CVarArgType", "view"]
-- ["Ps11CVarArgType", "viewDidLoad"]
-- ["Ps11CVarArgType", ""]
-- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps7CVarArg", "CGRect"]
+- !private ["Ps7CVarArg", "ScannerViewController"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "UIButton"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIControlEvents"]
+- !private ["Ps7CVarArg", "UIControlState"]
+- !private ["Ps7CVarArg", "UIScreen"]
+- !private ["Ps7CVarArg", "ViewController"]
+- !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "addTarget"]
+- !private ["Ps7CVarArg", "blue"]
+- !private ["Ps7CVarArg", "bounds"]
+- ["Ps7CVarArg", "buttonAction"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "pushViewController"]
+- !private ["Ps7CVarArg", "setTitle"]
+- !private ["Ps7CVarArg", "setTitleColor"]
+- !private ["Ps7CVarArg", "title"]
+- !private ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "ScannerViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "UIButton"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
@@ -93,23 +108,37 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "ViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
-- !private ["Ps28CustomDebugStringConvertible", "blueColor"]
+- !private ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - ["Ps28CustomDebugStringConvertible", "buttonAction"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "mainScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleColor"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "CGRectMake"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "size"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "ScannerViewController"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "UIButton"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIControlEvents"]
@@ -118,12 +147,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "ViewController"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
-- !private ["Ps23CustomStringConvertible", "blueColor"]
+- !private ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - ["Ps23CustomStringConvertible", "buttonAction"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "mainScreen"]
+- !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
@@ -133,10 +162,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "CGRectMake"]
-- !private ["Ps9Equatable", "Normal"]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "ScannerViewController"]
-- !private ["Ps9Equatable", "TouchUpInside"]
+- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIButton"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIControlEvents"]
@@ -145,13 +177,13 @@ depends-member:
 - !private ["Ps9Equatable", "ViewController"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
-- !private ["Ps9Equatable", "blueColor"]
+- !private ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "bounds"]
 - ["Ps9Equatable", "buttonAction"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "mainScreen"]
+- !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "pushViewController"]
@@ -159,12 +191,16 @@ depends-member:
 - !private ["Ps9Equatable", "setTitleColor"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "touchUpInside"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "CGRectMake"]
+- !private ["Ps23FloatLiteralConvertible", "Stride"]
+- !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "ScannerViewController"]
+- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIButton"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIControlEvents"]
@@ -173,12 +209,12 @@ depends-member:
 - !private ["Ps8Hashable", "ViewController"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
-- !private ["Ps8Hashable", "blueColor"]
+- !private ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "bounds"]
 - ["Ps8Hashable", "buttonAction"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "mainScreen"]
+- !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "pushViewController"]
@@ -188,7 +224,13 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps25IntegerLiteralConvertible", "Stride"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "ScannerViewController"]
 - !private ["PSo8NSCoding", "UIButton"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -198,7 +240,7 @@ depends-member:
 - !private ["PSo8NSCoding", "ViewController"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
-- !private ["PSo8NSCoding", "blueColor"]
+- !private ["PSo8NSCoding", "blue"]
 - ["PSo8NSCoding", "buttonAction"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "init"]
@@ -211,8 +253,8 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "blueColor"]
-- !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
+- !private ["PSo9NSCopying", "blue"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "ScannerViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIButton"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -231,7 +273,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "AnyObject"]
-- !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "ScannerViewController"]
 - !private ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -241,12 +283,12 @@ depends-member:
 - !private ["CSo8NSObject", "ViewController"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
-- !private ["CSo8NSObject", "blueColor"]
+- !private ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "buttonAction"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "mainScreen"]
+- !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
@@ -255,7 +297,7 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "ScannerViewController"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -265,12 +307,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "ViewController"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
-- !private ["PSo16NSObjectProtocol", "blueColor"]
+- !private ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "buttonAction"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "mainScreen"]
+- !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
@@ -280,15 +322,24 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blueColor"]
-- !private ["Ps13OptionSetType", "Normal"]
-- !private ["Ps13OptionSetType", "TouchUpInside"]
+- !private ["PSo14NSSecureCoding", "blue"]
+- !private ["Ps9OptionSet", "Element"]
+- !private ["Ps9OptionSet", "RawValue"]
+- !private ["Ps9OptionSet", "init"]
+- !private ["Ps9OptionSet", "touchUpInside"]
 - !private ["Sq", "deinit"]
-- !private ["Ps16RawRepresentable", "Normal"]
-- !private ["Ps16RawRepresentable", "TouchUpInside"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "touchUpInside"]
 - !private ["C6QRCode21ScannerViewController", "init"]
-- !private ["Ps14SetAlgebraType", "Normal"]
-- !private ["Ps14SetAlgebraType", "TouchUpInside"]
+- !private ["Ps10SetAlgebra", "Element"]
+- !private ["Ps10SetAlgebra", "RawValue"]
+- !private ["Ps10SetAlgebra", "init"]
+- !private ["Ps10SetAlgebra", "touchUpInside"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps10Strideable", "Stride"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
@@ -299,7 +350,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "setTitleColor"]
-- !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "ScannerViewController"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -325,8 +376,8 @@ depends-member:
 - !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo8UIButton", "setTitleColor"]
-- !private ["CSo7UIColor", "blueColor"]
-- !private ["PSo18UIContentContainer", "CGRectMake"]
+- !private ["CSo7UIColor", "blue"]
+- !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "ScannerViewController"]
 - !private ["PSo18UIContentContainer", "UIButton"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -348,8 +399,10 @@ depends-member:
 - !private ["CSo9UIControl", "init"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "setTitleColor"]
-- !private ["VSC15UIControlEvents", "TouchUpInside"]
-- !private ["VSC14UIControlState", "Normal"]
+- !private ["VSC15UIControlEvents", "touchUpInside"]
+- !private ["VSC14UIControlState", "Element"]
+- !private ["VSC14UIControlState", "RawValue"]
+- !private ["VSC14UIControlState", "init"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "init"]
@@ -360,7 +413,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "setTitleColor"]
-- !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "ScannerViewController"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -382,11 +435,16 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "addTarget"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "setTitle"]
+- !private ["PSo11UIFocusItem", "setTitleColor"]
 - !private ["PSo31UIImagePickerControllerDelegate", "init"]
 - !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["PSo30UINavigationControllerDelegate", "init"]
 - ["CSo11UIResponder", "AnyObject"]
-- !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "ScannerViewController"]
 - !private ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -408,8 +466,8 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo8UIScreen", "bounds"]
-- !private ["CSo8UIScreen", "mainScreen"]
-- !private ["PSo16UIStateRestoring", "CGRectMake"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "ScannerViewController"]
 - !private ["PSo16UIStateRestoring", "UIButton"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -427,7 +485,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "ScannerViewController"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -441,7 +499,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "buttonAction"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "mainScreen"]
+- !private ["PSo18UITraitEnvironment", "main"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
@@ -457,7 +515,7 @@ depends-member:
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "setTitleColor"]
 - ["CSo16UIViewController", "AnyObject"]
-- !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "ScannerViewController"]
 - !private ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -476,7 +534,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - ["C6QRCode14ViewController", "AnyObject"]
-- !private ["C6QRCode14ViewController", "CGRectMake"]
+- !private ["C6QRCode14ViewController", "CGRect"]
 - !private ["C6QRCode14ViewController", "ScannerViewController"]
 - !private ["C6QRCode14ViewController", "UIButton"]
 - !private ["C6QRCode14ViewController", "UIColor"]
@@ -493,38 +551,63 @@ depends-member:
 - !private ["C6QRCode14ViewController", "title"]
 - !private ["C6QRCode14ViewController", "view"]
 - ["C6QRCode14ViewController", "viewDidLoad"]
-- !private ["Ps24_ColorLiteralConvertible", "blueColor"]
-- !private ["Ps12_Reflectable", "addSubview"]
-- !private ["Ps12_Reflectable", "addTarget"]
-- !private ["Ps12_Reflectable", "height"]
-- !private ["Ps12_Reflectable", "init"]
-- !private ["Ps12_Reflectable", "setTitle"]
-- !private ["Ps12_Reflectable", "setTitleColor"]
-- !private ["Ps12_Reflectable", "size"]
-- !private ["Ps12_Reflectable", "width"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "Stride"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps24_ColorLiteralConvertible", "blue"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitleColor"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "Stride"]
 depends-nominal:
 - !private "PSo38AVCaptureMetadataOutputObjectsDelegate"
+- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "Ps23ArrayLiteralConvertible"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "PSo15CALayerDelegate"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
-- "Ps11CVarArgType"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps13FloatingPoint"
 - "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps10MirrorPath"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "Ps13OptionSetType"
+- !private "Ps9OptionSet"
 - !private "Sq"
 - !private "Ps16RawRepresentable"
 - !private "C6QRCode21ScannerViewController"
-- !private "Ps14SetAlgebraType"
+- !private "Ps10SetAlgebra"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -537,6 +620,7 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
 - !private "PSo31UIImagePickerControllerDelegate"
 - !private "CSo22UINavigationController"
 - !private "PSo30UINavigationControllerDelegate"
@@ -547,19 +631,30 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - "C6QRCode14ViewController"
+- !private "Ps31_BuiltinFloatLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_ColorLiteralConvertible"
-- !private "Ps12_Reflectable"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "48b74c9aeeff5a1782abe248162a45df"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "3a8c6c2d90baa3f5b0c02c19830c2e47"

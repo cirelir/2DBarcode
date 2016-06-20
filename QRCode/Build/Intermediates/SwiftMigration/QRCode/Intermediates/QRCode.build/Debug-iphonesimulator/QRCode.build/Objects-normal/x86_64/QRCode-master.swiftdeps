@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.30 clang-800.0.24)"
+options: "1a6c7bebd61a5ff26132ae666ca21937"
+build_time: [519722763, 859034000]
+inputs:
+  "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerBackgroundView.swift": [9223372036854775807, 0]
+  "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ViewController.swift": [515749767, 0]
+  "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift": [515834601, 0]
+  "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/ScannerViewController.swift": [519720388, 0]
+  "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/AppDelegate.swift": [515749733, 0]

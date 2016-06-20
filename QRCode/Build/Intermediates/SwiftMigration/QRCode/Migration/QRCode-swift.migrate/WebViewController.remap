@@ -1,0 +1,35 @@
+[
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift",
+  "offset": 369,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift",
+  "offset": 505,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift",
+  "offset": 518,
+  "remove": 3,
+  "text": "url",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift",
+  "offset": 619,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift",
+  "offset": 698,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/kakukinsen/GitHub/2DBarcode/QRCode/QRCode/WebViewController.swift",
+  "offset": 702,
+  "remove": 7,
+  "text": ": ",
+ }
+]
