@@ -18,15 +18,15 @@ class WebViewController: UIViewController,UIWebViewDelegate {
         
         let str = url! as String
         
-        let path = NSURL(string: str)
+        let path = URL(string: str)
         let webview = UIWebView(frame: self.view.bounds)
         webview.delegate = self
-        webview.loadRequest(NSURLRequest(URL: path!))
+        webview.loadRequest(URLRequest(url: path!))
         self.view.addSubview(webview)
         
     }
     
-    func webViewDidFinishLoad(webView: UIWebView) {
-        self.title = webView.stringByEvaluatingJavaScriptFromString("document.title")
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        self.title = webView.stringByEvaluatingJavaScript(from: "document.title")
     }
 }

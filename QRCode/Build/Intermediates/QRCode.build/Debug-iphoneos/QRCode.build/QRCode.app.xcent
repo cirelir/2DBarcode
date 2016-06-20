@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>A747CBK4U3.BD.QRCode</string>
+	<string>C9X37NMKSC.BD.QRCode</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>A747CBK4U3</string>
+	<string>C9X37NMKSC</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>A747CBK4U3.BD.QRCode</string>
+		<string>C9X37NMKSC.BD.QRCode</string>
 	</array>
 </dict>
 </plist>

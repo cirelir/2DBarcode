@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C6QRCode11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
 - "applicationDidBecomeActive"
-- "applicationWillEnterForeground"
-- "applicationWillTerminate"
 - "applicationWillResignActive"
-- "window"
+- "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "window"
+- "application"
 depends-top-level:
-- !private "ViewController"
+- "AppDelegate"
+- "NSObject"
 - !private "BooleanLiteralType"
-- "Bool"
-- "UIResponder"
 - !private "UINavigationController"
 - "UIApplication"
-- "AppDelegate"
+- "UIApplicationDelegate"
+- !private "ViewController"
+- "Bool"
+- "AnyObject"
+- "UIResponder"
 - "UIWindow"
 - !private "UIColor"
-- "NSObject"
-- "AnyObject"
-- "UIApplicationDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UINavigationController"]

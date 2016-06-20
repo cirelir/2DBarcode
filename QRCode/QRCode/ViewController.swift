@@ -15,15 +15,15 @@ class ViewController: UIViewController {
         
         self.title = "首页"
         
-        let button = UIButton(frame: CGRectMake((UIScreen.mainScreen().bounds.size.width-100) * 0.5, (UIScreen.mainScreen().bounds.size.height-30) * 0.5, 100, 30))
-        button.setTitle("扫一扫", forState: UIControlState.Normal)
-        button.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
-        button.addTarget(self, action: #selector(ViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        let button = UIButton(frame: CGRect(x: (UIScreen.main().bounds.size.width-100) * 0.5, y: (UIScreen.main().bounds.size.height-30) * 0.5, width: 100, height: 30))
+        button.setTitle("扫一扫", for: UIControlState())
+        button.setTitleColor(UIColor.blue(), for: UIControlState())
+        button.addTarget(self, action: #selector(ViewController.buttonAction(_:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(button)
         
     }
     
-    func buttonAction(sender : AnyObject){
+    func buttonAction(_ sender : AnyObject){
         print("扫一扫")
         let  scanner = ScannerViewController()
         self.navigationController?.pushViewController(scanner, animated: true)

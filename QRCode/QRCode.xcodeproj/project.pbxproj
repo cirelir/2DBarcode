@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EE28F1E51CDC38FA006AEDA4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28F1E41CDC38FA006AEDA4 /* WebViewController.swift */; };
+		EE73D0AE1D17D3A3000658D7 /* QRCodeScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE73D0AD1D17D3A3000658D7 /* QRCodeScanLine@2x.png */; };
 		EEB415851CDB2EE200ABA6A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB415841CDB2EE200ABA6A8 /* AppDelegate.swift */; };
 		EEB415871CDB2EE200ABA6A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB415861CDB2EE200ABA6A8 /* ViewController.swift */; };
 		EEB4158A1CDB2EE200ABA6A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB415881CDB2EE200ABA6A8 /* Main.storyboard */; };
 		EEB4158C1CDB2EE200ABA6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB4158B1CDB2EE200ABA6A8 /* Assets.xcassets */; };
 		EEB4158F1CDB2EE200ABA6A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB4158D1CDB2EE200ABA6A8 /* LaunchScreen.storyboard */; };
 		EEB415971CDB31A200ABA6A8 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB415961CDB31A200ABA6A8 /* ScannerViewController.swift */; };
+		EEF56B3E1D17D1EB004784D4 /* ScannerBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF56B3D1D17D1EB004784D4 /* ScannerBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE28F1E41CDC38FA006AEDA4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EE73D0AD1D17D3A3000658D7 /* QRCodeScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLine@2x.png"; sourceTree = "<group>"; };
 		EEB415811CDB2EE200ABA6A8 /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB415841CDB2EE200ABA6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEB415861CDB2EE200ABA6A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		EEB4158E1CDB2EE200ABA6A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEB415901CDB2EE200ABA6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB415961CDB31A200ABA6A8 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		EEF56B3D1D17D1EB004784D4 /* ScannerBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 		EEB415831CDB2EE200ABA6A8 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				EE73D0AD1D17D3A3000658D7 /* QRCodeScanLine@2x.png */,
 				EEB415841CDB2EE200ABA6A8 /* AppDelegate.swift */,
 				EEB415861CDB2EE200ABA6A8 /* ViewController.swift */,
 				EEB415961CDB31A200ABA6A8 /* ScannerViewController.swift */,
+				EEF56B3D1D17D1EB004784D4 /* ScannerBackgroundView.swift */,
 				EE28F1E41CDC38FA006AEDA4 /* WebViewController.swift */,
 				EEB415881CDB2EE200ABA6A8 /* Main.storyboard */,
 				EEB4158B1CDB2EE200ABA6A8 /* Assets.xcassets */,
@@ -102,6 +108,8 @@
 				TargetAttributes = {
 					EEB415801CDB2EE200ABA6A8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C9X37NMKSC;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -129,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB4158F1CDB2EE200ABA6A8 /* LaunchScreen.storyboard in Resources */,
+				EE73D0AE1D17D3A3000658D7 /* QRCodeScanLine@2x.png in Resources */,
 				EEB4158C1CDB2EE200ABA6A8 /* Assets.xcassets in Resources */,
 				EEB4158A1CDB2EE200ABA6A8 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF56B3E1D17D1EB004784D4 /* ScannerBackgroundView.swift in Sources */,
 				EEB415871CDB2EE200ABA6A8 /* ViewController.swift in Sources */,
 				EE28F1E51CDC38FA006AEDA4 /* WebViewController.swift in Sources */,
 				EEB415971CDB31A200ABA6A8 /* ScannerViewController.swift in Sources */,
@@ -257,11 +267,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QRCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BD.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -269,11 +283,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QRCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BD.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C6QRCode11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
 - "applicationDidBecomeActive"
-- "applicationWillTerminate"
 - "applicationWillEnterForeground"
-- "application"
-- "applicationDidEnterBackground"
 - "window"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "application"
 depends-top-level:
-- "UIResponder"
 - !private "UINavigationController"
-- "Bool"
-- "AppDelegate"
-- !private "BooleanLiteralType"
-- !private "UIColor"
 - "AnyObject"
-- "UIWindow"
 - !private "ViewController"
-- "NSObject"
-- "UIApplication"
+- "AppDelegate"
 - "UIApplicationDelegate"
+- !private "UIColor"
+- "UIResponder"
+- "NSObject"
+- !private "BooleanLiteralType"
+- "Bool"
+- "UIWindow"
+- "UIApplication"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UINavigationController"]
@@ -45,7 +45,7 @@ depends-member:
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "rootViewController"]
-- !private ["Ps9AnyObject", "whiteColor"]
+- !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C6QRCode11AppDelegate", "AnyObject"]
@@ -71,27 +71,29 @@ depends-member:
 - ["C6QRCode11AppDelegate", "deinit"]
 - ["C6QRCode11AppDelegate", "init"]
 - ["C6QRCode11AppDelegate", "window"]
-- !private ["Ps11CVarArgType", "UIColor"]
-- !private ["Ps11CVarArgType", "UINavigationController"]
-- !private ["Ps11CVarArgType", "ViewController"]
-- ["Ps11CVarArgType", "application"]
-- ["Ps11CVarArgType", "applicationDidBecomeActive"]
-- ["Ps11CVarArgType", "applicationDidEnterBackground"]
-- ["Ps11CVarArgType", "applicationDidFinishLaunching"]
-- ["Ps11CVarArgType", "applicationDidReceiveMemoryWarning"]
-- ["Ps11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps11CVarArgType", "applicationShouldRequestHealthAuthorization"]
-- ["Ps11CVarArgType", "applicationSignificantTimeChange"]
-- ["Ps11CVarArgType", "applicationWillEnterForeground"]
-- ["Ps11CVarArgType", "applicationWillResignActive"]
-- ["Ps11CVarArgType", "applicationWillTerminate"]
-- !private ["Ps11CVarArgType", "backgroundColor"]
-- ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "rootViewController"]
-- !private ["Ps11CVarArgType", "whiteColor"]
-- ["Ps11CVarArgType", "window"]
-- ["Ps11CVarArgType", ""]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "rootViewController"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UINavigationController"]
+- !private ["Ps7CVarArg", "ViewController"]
+- ["Ps7CVarArg", "application"]
+- ["Ps7CVarArg", "applicationDidBecomeActive"]
+- ["Ps7CVarArg", "applicationDidEnterBackground"]
+- ["Ps7CVarArg", "applicationDidFinishLaunching"]
+- ["Ps7CVarArg", "applicationDidReceiveMemoryWarning"]
+- ["Ps7CVarArg", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps7CVarArg", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps7CVarArg", "applicationShouldRequestHealthAuthorization"]
+- ["Ps7CVarArg", "applicationSignificantTimeChange"]
+- ["Ps7CVarArg", "applicationWillEnterForeground"]
+- ["Ps7CVarArg", "applicationWillResignActive"]
+- ["Ps7CVarArg", "applicationWillTerminate"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "rootViewController"]
+- !private ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", "window"]
+- ["Ps7CVarArg", ""]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UINavigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "ViewController"]
@@ -110,7 +112,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- !private ["Ps28CustomDebugStringConvertible", "white"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
@@ -131,7 +133,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
-- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "UIColor"]
@@ -152,7 +154,7 @@ depends-member:
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "rootViewController"]
-- !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps9Equatable", "white"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - !private ["Ps8Hashable", "UIColor"]
@@ -173,14 +175,14 @@ depends-member:
 - !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "rootViewController"]
-- !private ["Ps8Hashable", "whiteColor"]
+- !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "rootViewController"]
-- !private ["PSo8NSCoding", "whiteColor"]
-- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo8NSCoding", "white"]
+- !private ["PSo9NSCopying", "white"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
@@ -205,7 +207,7 @@ depends-member:
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "rootViewController"]
-- !private ["CSo8NSObject", "whiteColor"]
+- !private ["CSo8NSObject", "white"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UINavigationController"]
@@ -225,10 +227,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
-- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["PSo14NSSecureCoding", "white"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -253,7 +255,7 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
-- !private ["CSo7UIColor", "whiteColor"]
+- !private ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "rootViewController"]
@@ -262,6 +264,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "rootViewController"]
 - !private ["CSo22UINavigationController", "init"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -298,13 +302,14 @@ depends-member:
 - !private ["CSo8UIWindow", "backgroundColor"]
 - !private ["CSo8UIWindow", "rootViewController"]
 - !private ["C6QRCode14ViewController", "init"]
-- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
-- !private ["Ps12_Reflectable", "backgroundColor"]
-- !private ["Ps12_Reflectable", "rootViewController"]
+- !private ["Ps24_ColorLiteralConvertible", "white"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C6QRCode11AppDelegate"
-- "Ps11CVarArgType"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
@@ -324,6 +329,7 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
 - !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "PSo16UIStateRestoring"
@@ -333,18 +339,19 @@ depends-nominal:
 - !private "CSo8UIWindow"
 - !private "C6QRCode14ViewController"
 - !private "Ps24_ColorLiteralConvertible"
-- !private "Ps12_Reflectable"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "3953856461f52ef57926b1b34bf91ee2"

@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6QRCode14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "buttonAction"
 depends-top-level:
-- !private "StringLiteralType"
-- "ViewController"
-- !private "UIColor"
-- !private "*"
-- !private "UIControlEvents"
-- !private "ScannerViewController"
-- !private "UIControlState"
-- "AnyObject"
-- "UIViewController"
-- !private "-"
 - !private "CGRectMake"
 - !private "UIButton"
-- !private "print"
-- !private "BooleanLiteralType"
+- !private "ScannerViewController"
+- "AnyObject"
+- !private "StringLiteralType"
 - !private "UIScreen"
+- !private "-"
+- !private "UIControlEvents"
+- !private "UIColor"
+- "ViewController"
+- !private "print"
+- !private "UIControlState"
+- !private "*"
+- !private "BooleanLiteralType"
+- "UIViewController"
 depends-member:
 - !private ["PSo38AVCaptureMetadataOutputObjectsDelegate", "init"]
 - !private ["Ps9AnyObject", "CGRectMake"]

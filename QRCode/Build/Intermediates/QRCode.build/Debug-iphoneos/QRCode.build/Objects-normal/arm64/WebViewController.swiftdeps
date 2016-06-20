@@ -6,19 +6,18 @@ provides-nominal:
 provides-member:
 - ["C6QRCode17WebViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "webViewDidFinishLoad"
 - "url"
+- "viewDidLoad"
 depends-top-level:
 - !private "StringLiteralType"
+- !private "NSURLRequest"
+- "WebViewController"
+- "UIWebView"
+- "UIWebViewDelegate"
+- !private "NSURL"
 - "UIViewController"
 - "String"
-- "UIWebView"
-- "WebViewController"
-- !private "print"
-- "UIWebViewDelegate"
-- !private "NSURLRequest"
-- !private "NSURL"
 depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "NSURLRequest"]
@@ -28,7 +27,6 @@ depends-member:
 - !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "loadRequest"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "stringByEvaluatingJavaScriptFromString"]
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "url"]
@@ -38,7 +36,6 @@ depends-member:
 - ["Ps9AnyObject", "webViewDidFinishLoad"]
 - ["Ps9AnyObject", "webViewDidStartLoad"]
 - ["Ps9AnyObject", ""]
-- !private ["Sb", "deinit"]
 - !private ["Ps11CVarArgType", "NSURL"]
 - !private ["Ps11CVarArgType", "NSURLRequest"]
 - !private ["Ps11CVarArgType", "UIWebView"]
@@ -47,7 +44,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "delegate"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "loadRequest"]
-- !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "stringByEvaluatingJavaScriptFromString"]
 - !private ["Ps11CVarArgType", "title"]
 - ["Ps11CVarArgType", "url"]
@@ -57,8 +53,6 @@ depends-member:
 - ["Ps11CVarArgType", "webViewDidFinishLoad"]
 - ["Ps11CVarArgType", "webViewDidStartLoad"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
-- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURLRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "UIWebView"]
@@ -67,7 +61,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "loadRequest"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByEvaluatingJavaScriptFromString"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "url"]
@@ -85,7 +78,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "loadRequest"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "stringByEvaluatingJavaScriptFromString"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "url"]
@@ -95,7 +87,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "webViewDidFinishLoad"]
 - ["Ps23CustomStringConvertible", "webViewDidStartLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "NSURLRequest"]
 - !private ["Ps9Equatable", "UIWebView"]
@@ -104,7 +95,6 @@ depends-member:
 - !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "loadRequest"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "stringByEvaluatingJavaScriptFromString"]
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "url"]
@@ -114,8 +104,6 @@ depends-member:
 - ["Ps9Equatable", "webViewDidFinishLoad"]
 - ["Ps9Equatable", "webViewDidStartLoad"]
 - ["Ps9Equatable", ""]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "NSURLRequest"]
 - !private ["Ps8Hashable", "UIWebView"]
@@ -124,7 +112,6 @@ depends-member:
 - !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "loadRequest"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "stringByEvaluatingJavaScriptFromString"]
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "url"]
@@ -134,12 +121,6 @@ depends-member:
 - ["Ps8Hashable", "webViewDidFinishLoad"]
 - ["Ps8Hashable", "webViewDidStartLoad"]
 - ["Ps8Hashable", ""]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLRequest"]
 - !private ["PSo8NSCoding", "UIWebView"]
@@ -148,7 +129,6 @@ depends-member:
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "loadRequest"]
-- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "stringByEvaluatingJavaScriptFromString"]
 - !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "url"]
@@ -163,7 +143,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURLRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "UIWebView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - ["PSo26NSExtensionRequestHandling", "url"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -182,7 +161,6 @@ depends-member:
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "loadRequest"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "stringByEvaluatingJavaScriptFromString"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "url"]
@@ -199,7 +177,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "loadRequest"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "stringByEvaluatingJavaScriptFromString"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "url"]
@@ -210,15 +187,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "webViewDidStartLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "deinit"]
-- !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "init"]
 - !private ["CSo12NSURLRequest", "init"]
-- !private ["Ps16OutputStreamType", "init"]
-- !private ["Ps10Streamable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
@@ -239,7 +209,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "loadRequest"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "stringByEvaluatingJavaScriptFromString"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - ["PSo21UIAppearanceContainer", "url"]
@@ -253,7 +222,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURLRequest"]
 - !private ["PSo18UIContentContainer", "UIWebView"]
 - ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "title"]
 - ["PSo18UIContentContainer", "url"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -282,7 +250,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "loadRequest"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "stringByEvaluatingJavaScriptFromString"]
 - !private ["PSo18UIFocusEnvironment", "title"]
 - ["PSo18UIFocusEnvironment", "url"]
@@ -301,7 +268,6 @@ depends-member:
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "loadRequest"]
-- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "stringByEvaluatingJavaScriptFromString"]
 - !private ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "url"]
@@ -318,7 +284,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURLRequest"]
 - !private ["PSo16UIStateRestoring", "UIWebView"]
 - ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "title"]
 - ["PSo16UIStateRestoring", "url"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -335,7 +300,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "loadRequest"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "stringByEvaluatingJavaScriptFromString"]
 - !private ["PSo18UITraitEnvironment", "title"]
 - ["PSo18UITraitEnvironment", "url"]
@@ -356,7 +320,6 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIWebView"]
 - ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "url"]
 - !private ["CSo16UIViewController", "view"]
@@ -372,7 +335,6 @@ depends-member:
 - !private ["PSo17UIWebViewDelegate", "NSURL"]
 - !private ["PSo17UIWebViewDelegate", "NSURLRequest"]
 - !private ["PSo17UIWebViewDelegate", "UIWebView"]
-- !private ["PSo17UIWebViewDelegate", "print"]
 - !private ["PSo17UIWebViewDelegate", "title"]
 - !private ["PSo17UIWebViewDelegate", "url"]
 - !private ["PSo17UIWebViewDelegate", "view"]
@@ -380,20 +342,12 @@ depends-member:
 - ["PSo17UIWebViewDelegate", "webViewDidFinishLoad"]
 - ["PSo17UIWebViewDelegate", "webViewDidStartLoad"]
 - ["PSo17UIWebViewDelegate", ""]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["C6QRCode17WebViewController", "NSURL"]
 - !private ["C6QRCode17WebViewController", "NSURLRequest"]
 - ["C6QRCode17WebViewController", "String"]
 - ["C6QRCode17WebViewController", "UIWebView"]
 - ["C6QRCode17WebViewController", "deinit"]
 - ["C6QRCode17WebViewController", "init"]
-- !private ["C6QRCode17WebViewController", "print"]
 - !private ["C6QRCode17WebViewController", "title"]
 - ["C6QRCode17WebViewController", "url"]
 - !private ["C6QRCode17WebViewController", "view"]
@@ -401,12 +355,7 @@ depends-member:
 - ["C6QRCode17WebViewController", "webView"]
 - ["C6QRCode17WebViewController", "webViewDidFinishLoad"]
 - ["C6QRCode17WebViewController", "webViewDidStartLoad"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "delegate"]
@@ -415,23 +364,11 @@ depends-member:
 - !private ["Ps12_Reflectable", "stringByEvaluatingJavaScriptFromString"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Sb"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
-- !private "Sd"
 - "Ps9Equatable"
-- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
 - "Ps8Hashable"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -439,14 +376,8 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - !private "CSo5NSURL"
 - !private "CSo12NSURLRequest"
-- !private "Ps16OutputStreamType"
-- !private "Ps10Streamable"
-- !private "SS"
-- !private "Ps30StringInterpolationConvertible"
-- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -462,20 +393,8 @@ depends-nominal:
 - "CSo16UIViewController"
 - !private "CSo9UIWebView"
 - "PSo17UIWebViewDelegate"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
-- !private "Ps31UnicodeScalarLiteralConvertible"
 - "C6QRCode17WebViewController"
-- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "Ps32_BuiltinStringLiteralConvertible"
-- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
-- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps32_FileReferenceLiteralConvertible"
-- !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:

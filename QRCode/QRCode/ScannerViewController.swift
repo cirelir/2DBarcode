@@ -12,35 +12,30 @@ import AVFoundation
 class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     //相机显示视图
-    let cameraView = UIView(frame: UIScreen.mainScreen().bounds)
-    
-    //屏幕扫描区域视图
-    let barcodeView = UIView(frame: CGRectMake(UIScreen.mainScreen().bounds.size.width * 0.2, UIScreen.mainScreen().bounds.size.height * 0.35, UIScreen.mainScreen().bounds.size.width * 0.6, UIScreen.mainScreen().bounds.size.width * 0.6))
-    
-    //扫描线
-    let scanLayer = CALayer()
+    let cameraView = ScannerBackgroundView(frame: UIScreen.main().bounds)
+
     
     let captureSession = AVCaptureSession()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "扫一扫"
-        
-        
+        self.view.backgroundColor = UIColor.black()
         //设置导航栏
-        let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(ScannerViewController.selectPhotoFormPhotoLibrary(_:)))
+        let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ScannerViewController.selectPhotoFormPhotoLibrary(_:)))
         self.navigationItem.rightBarButtonItem = barButtonItem
         
         self.view.addSubview(cameraView)
         
         //初始化捕捉设备（AVCaptureDevice），类型AVMdeiaTypeVideo
-        let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
         let input :AVCaptureDeviceInput
         
         //创建媒体数据输出流
         let output = AVCaptureMetadataOutput()
         
+        //捕捉异常
         do{
             //创建输入流
             input = try AVCaptureDeviceInput(device: captureDevice)
@@ -55,7 +50,7 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
         }
         
         //创建串行队列
-        let dispatchQueue = dispatch_queue_create("queue", nil)
+        let dispatchQueue = DispatchQueue(label: "queue", attributes: [])
         
         //设置输出流的代理
         output.setMetadataObjectsDelegate(self, queue: dispatchQueue)
@@ -67,44 +62,43 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
         let videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         
         //设置预览图层的填充方式
-        videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         
         //设置预览图层的frame
-        videoPreviewLayer.frame = cameraView.bounds
+        videoPreviewLayer?.frame = cameraView.bounds
         
         //将预览图层添加到预览视图上
-        cameraView.layer.addSublayer(videoPreviewLayer)
+        cameraView.layer.insertSublayer(videoPreviewLayer!, at: 0)
         
         //设置扫描范围
-        output.rectOfInterest = CGRectMake(0.2, 0.2, 0.6, 0.6)
-        
-        barcodeView.layer.borderWidth = 1.0
-        barcodeView.layer.borderColor = UIColor.greenColor().CGColor
-        
-        cameraView.addSubview(barcodeView)
-        
-        //设置扫描线
-        scanLayer.frame = CGRectMake(0, 0, barcodeView.frame.size.width, 1)
-        
-        //添加扫描线图层
-        barcodeView.layer.addSublayer(scanLayer)
-        
-        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: #selector(ScannerViewController.moveScannerLayer(_:)), userInfo: nil, repeats: true)
-        
-        captureSession.startRunning()
+        output.rectOfInterest = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        captureSession.startRunning()
+        self.tabBarController?.tabBar.isHidden = true
+        self.scannerStart()
     }
+    
+    func scannerStart(){
+        captureSession.startRunning()
+        cameraView.scanning = "start"
+    }
+    
+    func scannerStop() {
+        captureSession.stopRunning()
+        cameraView.scanning = "stop"
+    }
+    
+    
+    
     //扫描代理方法
-    func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, from connection: AVCaptureConnection!) {
         if metadataObjects != nil && metadataObjects.count > 0 {
             let metaData = metadataObjects.first
             print(metaData?.stringValue)
-            dispatch_async(dispatch_get_main_queue(), { 
+            DispatchQueue.main.async(execute: {
                 let result = WebViewController()
                 result.url = metaData?.stringValue
                 
@@ -114,31 +108,18 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
         }
     }
     
-    //让扫描线滚动
-    func moveScannerLayer(timer : NSTimer) {
-        var frame = scanLayer.frame
-        if barcodeView.frame.size.height < frame.origin.y {
-            frame.origin.y = 0
-            scanLayer.frame = frame
-        }else{
-            frame.origin.y += 5
-            scanLayer.frame = frame
-        }
-    }
-    
-    
     //从相册中选择图片
-    func selectPhotoFormPhotoLibrary(sender : AnyObject){
+    func selectPhotoFormPhotoLibrary(_ sender : AnyObject){
         let picture = UIImagePickerController()
-        picture.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        picture.sourceType = UIImagePickerControllerSourceType.photoLibrary
         picture.delegate = self
-        self.presentViewController(picture, animated: true, completion: nil)
+        self.present(picture, animated: true, completion: nil)
         
     }
     
     //选择相册中的图片完成，进行获取二维码信息
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let image = info[UIImagePickerControllerOriginalImage]
         
         let imageData = UIImagePNGRepresentation(image as! UIImage)
@@ -147,19 +128,17 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
         
         let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyLow])
         
-        let array = detector.featuresInImage(ciImage!)
+        let array = detector?.features(in: ciImage!)
         
-        let result : CIQRCodeFeature = array.first as! CIQRCodeFeature
+        let result : CIQRCodeFeature = array!.first as! CIQRCodeFeature
         
         
         let resultView = WebViewController()
         resultView.url = result.messageString
         
         self.navigationController?.pushViewController(resultView, animated: true)
-        picker.dismissViewControllerAnimated(true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
         print(result.messageString)
-        
-        
-    }
 
+    }
 }
