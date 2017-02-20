@@ -12,7 +12,7 @@ class ScannerBackgroundView: UIView {
     
     
     //屏幕扫描区域视图
-    let barcodeView = UIView(frame: CGRect(x: UIScreen.main().bounds.size.width * 0.2, y: UIScreen.main().bounds.size.height * 0.35, width: UIScreen.main().bounds.size.width * 0.6, height: UIScreen.main().bounds.size.width * 0.6))
+    let barcodeView = UIView(frame: CGRect(x: UIScreen.main.bounds.size.width * 0.2, y: UIScreen.main.bounds.size.height * 0.35, width: UIScreen.main.bounds.size.width * 0.6, height: UIScreen.main.bounds.size.width * 0.6))
     //扫描线
     let scanLine = UIImageView()
     
@@ -22,7 +22,7 @@ class ScannerBackgroundView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         barcodeView.layer.borderWidth = 1.0
-        barcodeView.layer.borderColor = UIColor.white().cgColor
+        barcodeView.layer.borderColor = UIColor.white.cgColor
         self.addSubview(barcodeView)
         
         //设置扫描线
@@ -42,21 +42,21 @@ class ScannerBackgroundView: UIView {
     }
     
     func  createBackGroundView() {
-        let topView = UIView(frame: CGRect(x: 0, y: 0,  width: UIScreen.main().bounds.size.width, height: UIScreen.main().bounds.size.height * 0.35))
-        let bottomView = UIView(frame: CGRect(x: 0, y: UIScreen.main().bounds.size.width * 0.6 + UIScreen.main().bounds.size.height * 0.35, width: UIScreen.main().bounds.size.width, height: UIScreen.main().bounds.size.height * 0.65 - UIScreen.main().bounds.size.width * 0.6))
+        let topView = UIView(frame: CGRect(x: 0, y: 0,  width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height * 0.35))
+        let bottomView = UIView(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.width * 0.6 + UIScreen.main.bounds.size.height * 0.35, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height * 0.65 - UIScreen.main.bounds.size.width * 0.6))
         
-        let leftView = UIView(frame: CGRect(x: 0, y: UIScreen.main().bounds.size.height * 0.35, width: UIScreen.main().bounds.size.width * 0.2, height: UIScreen.main().bounds.size.width * 0.6))
-        let rightView = UIView(frame: CGRect(x: UIScreen.main().bounds.size.width * 0.8, y: UIScreen.main().bounds.size.height * 0.35, width: UIScreen.main().bounds.size.width * 0.2, height: UIScreen.main().bounds.size.width * 0.6))
+        let leftView = UIView(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height * 0.35, width: UIScreen.main.bounds.size.width * 0.2, height: UIScreen.main.bounds.size.width * 0.6))
+        let rightView = UIView(frame: CGRect(x: UIScreen.main.bounds.size.width * 0.8, y: UIScreen.main.bounds.size.height * 0.35, width: UIScreen.main.bounds.size.width * 0.2, height: UIScreen.main.bounds.size.width * 0.6))
         
         topView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         bottomView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         leftView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         rightView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         
-        let label = UILabel(frame: CGRect(x: 0, y: 10, width: UIScreen.main().bounds.size.width, height: 21))
+        let label = UILabel(frame: CGRect(x: 0, y: 10, width: UIScreen.main.bounds.size.width, height: 21))
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = UIColor.white()
+        label.textColor = UIColor.white
         label.text = "将二维码/条形码放入扫描框内，即自动扫描"
         
         bottomView.addSubview(label)
@@ -71,8 +71,8 @@ class ScannerBackgroundView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    override func observeValue(forKeyPath keyPath: String?, of object: AnyObject?, change: [NSKeyValueChangeKey : AnyObject]?, context: UnsafeMutablePointer<Void>?) {
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if scanning == "start" {
             timer.fire()

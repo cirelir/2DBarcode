@@ -12,7 +12,7 @@ import AVFoundation
 class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     //相机显示视图
-    let cameraView = ScannerBackgroundView(frame: UIScreen.main().bounds)
+    let cameraView = ScannerBackgroundView(frame: UIScreen.main.bounds)
 
     
     let captureSession = AVCaptureSession()
@@ -20,7 +20,7 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "扫一扫"
-        self.view.backgroundColor = UIColor.black()
+        self.view.backgroundColor = UIColor.black
         //设置导航栏
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ScannerViewController.selectPhotoFormPhotoLibrary(_:)))
         self.navigationItem.rightBarButtonItem = barButtonItem
@@ -92,20 +92,24 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
     }
     
     
-    
     //扫描代理方法
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, from connection: AVCaptureConnection!) {
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+        print("_______")
+        
         if metadataObjects != nil && metadataObjects.count > 0 {
-            let metaData = metadataObjects.first
-            print(metaData?.stringValue)
+            let metaData : AVMetadataMachineReadableCodeObject = metadataObjects.first as! AVMetadataMachineReadableCodeObject
+            
+            print(metaData.stringValue)
+            
             DispatchQueue.main.async(execute: {
                 let result = WebViewController()
-                result.url = metaData?.stringValue
+                result.url = metaData.stringValue
                 
                 self.navigationController?.pushViewController(result, animated: true)
             })
             captureSession.stopRunning()
         }
+
     }
     
     //从相册中选择图片
@@ -119,7 +123,7 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
     
     //选择相册中的图片完成，进行获取二维码信息
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage]
         
         let imageData = UIImagePNGRepresentation(image as! UIImage)
@@ -138,7 +142,7 @@ class ScannerViewController: UIViewController,AVCaptureMetadataOutputObjectsDele
         
         self.navigationController?.pushViewController(resultView, animated: true)
         picker.dismiss(animated: true, completion: nil)
-        print(result.messageString)
+        print(result.messageString ?? String())
 
     }
 }

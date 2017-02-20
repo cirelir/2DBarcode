@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import WebKit
 
-class WebViewController: UIViewController,UIWebViewDelegate {
+class WebViewController: UIViewController,WKNavigationDelegate {
     
     var url : String?
     
@@ -19,14 +20,14 @@ class WebViewController: UIViewController,UIWebViewDelegate {
         let str = url! as String
         
         let path = URL(string: str)
-        let webview = UIWebView(frame: self.view.bounds)
-        webview.delegate = self
-        webview.loadRequest(URLRequest(url: path!))
+        let webview = WKWebView(frame: self.view.bounds)
+        webview.load(URLRequest(url: path!))
+        webview.navigationDelegate = self
         self.view.addSubview(webview)
-        
+    
     }
     
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.title = webView.stringByEvaluatingJavaScript(from: "document.title")
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.title = webView.title
     }
 }
